@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* 共通 */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Noto Sans JP", "Poppins", "Dancing Script", sans-serif;
+  line-height: 1.7;
+}
+main, aside {
+  width: 80%;
+  margin: auto;
+}
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+}
+/* font */
+.noto {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.pop {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.dance {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ヘッダー */
+header {
+  background-color: rgb(164, 209, 209);
+  height: 5rem;
+  padding: 0.5rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: -0.05rem;
+}
+.logo span {
+  color: #8521a3;
+}
+.icon {
+  height: 5rem;
+}
+.menu {
+  list-style-type: none;
+  gap: 2rem;
+  /* margin-right: 0; */
+}
+.menu-a {
+  position: relative;
+  /* text-decoration: none; */
+  padding:  .1rem 0;
+  transition: .3s;
+}
+.menu-a a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #8521a3;
+
+  transform: scaleX(.1);
+  transform-origin: center;
+
+  transition: transform .3s ease-in-out;
+}
+.menu-a a:hover::after {
+  transform: scaleX(1);
+}
+.menu-a a:hover {
+  color: #8521a3;
+  transition: .3s;
+}
+#bar {
+  background-color: #8521a3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* height: 10px; */
+  /* width: 100%; */
+  width: 5px;
+  z-index: 99;
+}
+/* カバー */
+.cover {
+  background-image: url(../images/cover.png);
+  background-size: cover;
+  background-position: center;
+  /* background-color: #ddd; */
+  width: 100%;
+  height:  40vh;
+  position: relative;
+}
+.cover-h {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* margin-top: 10vh; */
+  /* background-image: url(../images/logo.png); */
+}
+
+/* メイン */
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.heading span {
+  color: #8521a3;
+}
+.c-main {
+  background-color: #eee;
+  padding: 2rem;
+  text-align: center;
+}
+.c-main div {
+  text-align: left;
+}
+.self {
+  /* display: flex; */
+  /* align-content: space-between; */
+}
+.slideimg {
+  width: 350px;
+}
+/* アサイド */
+.info {
+  background-color: #ddd;
+  text-align: center;
+  padding: 2rem 0;
+}
+/* .info-tb th,tr {
+  padding: 1rem;
+} */
+form div {
+  margin: .2rem 2rem;
+  text-align: left;
+  width: 10rem;
+}
+input, textarea {
+  border: solid 1px #8521a3;
+  background-color: #fff;
+}
+.submit {
+  padding: .5rem;
+  border-radius: .5rem;
+}
+.submit:hover {
+  color: #fff;
+  background: #8521a3;
+  transition: .3s;
+}
+.submit:hover::after{
+  transition: scaleX(1);
+}
+/* フッター */
+footer {
+  background-color: rgb(164, 209, 209);
+  height: 5rem;
+  padding: 0.5rem;
+}
+.foot {
+  letter-spacing: -0.05rem;
+  text-wrap: nowrap;
+}
+.copyright {
+  font-size: 0.75rem;
+}
+.icon_f {
+  height: 3rem;
+}
+
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 14px;
+  line-height: 1;
+  z-index: 99;
+}
+#page-top a {
+  background: rgb(164, 209, 209);
+  text-decoration: none;
+  color: #000;
+  width: 60px;
+  padding: 1rem 1rem;
+  text-align: center;
+  display: block;
+  border: solid 2px #8521a3;
+  border-radius: 90px;
+  opacity: 0.9;
+  transition: all .3s ease;
+}
+#page-top a:hover {
+  text-decoration: none;
+  opacity: .5;
+}
+/* ここより以降デスクトップ */

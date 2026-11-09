@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusamoto Hitomi</title>
+    <meta name="description" content="房本瞳のポートフォリオ 2026年9月度職業訓練「Webプログラミング科」受講">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="images/add.png">
+
+    <!-- リセット -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+    
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Noto+Sans+JP:wght@100..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- スタイルシート -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="css/commmon.css"/> -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!-- OGP -->
+    <meta property="og:url" content="https://サンプルアドレス/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title content="Fusamoto Hitomi">
+    <meta property="og:description" content="房本瞳のポートフォリオ 2026年9月度職業訓練「Webプログラミング科」受講">
+    <meta property="og:image" content="https://サンプルアドレス/images/add.png">
+</head>
+
+<body>
+    <div id="bar"></div>
+    <header class="container">
+        <h1 class="logo pop">
+            <a class="container" href="index.html">
+            <img class="icon" src="images/add.png" alt="ロゴ"><span>Fusa</span>moto <span>Hi</span>tomi
+            </a>
+        <h1>
+        <nav>
+            <ul class="container menu">
+                <li class="menu-a"><a href="about.html">About</a></li>
+                <li class="menu-a"><a href="works.html">Works</a></li>
+                <li class="menu-a"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="cover">
+        <h1 class="cover-h">ここにh1</h1>
+    </div>
+
+    <main>
+        <section class="c-main">
+            <h2 class="heading pop"><span>Se</span>lf <span>Intro</span>duction</h2>
+            <div>
+                ここに内容文<br>ここに内容文<br>ここに内容文<br>ここに内容文
+            </div>
+        </section>
+        <section class="self">
+            <ol class="slideimg">
+                <li><img src="images/img/dice1.png"></li>
+                <li><img src="images/img/dog.jpg"></li>
+                <li><img src="images/img/kao1.gif"></li>
+            </ol>
+            <div class="self-p">
+                <h2 class="heading">房本瞳</h2>
+                <p>
+                    大阪出身で、前職では院内薬局の調剤補助でした。<br>
+                    縁あってこちらへ今年8月に転居してきました。<br>
+                    直近半年で体重が5kg増えました。<br>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <section class="info">
+            <h2 class="pop heading">Information</h2>
+            <p class="menu-a">お問合せやご依頼に関しては<a href="contact.html">Contact</a>よりご連絡よろしくお願いいたします。</p>
+            <form action="thanks.php" method="post">
+            <!-- <table class="info-tb">
+                <tr>
+                    <th>お名前</th>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <th>メールアドレス</th>
+                    <td><input type="email" name="email"></td>
+                </tr>
+                <tr>
+                    <th>お問合せ内容</th>
+                    <td><textarea name="message" id=""></textarea></td>
+                </tr>
+            </table> -->
+				<div>
+					<label>名前:</label>
+					<input type="text" name="name">
+                </div>
+				<div>
+					<label>メールアドレス:</label>
+					<input type="email" name="email">
+                </div>
+				<div>
+					<label>メッセージ</label>
+					<textarea name="message"></textarea>
+                </div>
+				<input class="submit" type="submit" value="メール送信" name="">
+			</form>
+        </section>
+    </aside>
+
+    <footer class="container">
+        <div class="foot container">
+            <p class="copyright">&copy;2026 FusamotoHitomi</p>
+            <img class="icon_f" src="images/add.png" alt="ロゴ">
+            <nav>
+                <ul class="container menu">
+                    <li class="menu-a"><a href="about.html">About</a></li>
+                    <li class="menu-a"><a href="works.html">Works</a></li>
+                    <li class="menu-a"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p id="page-top" class="pop"><a href="#">TOP</a></p>
+    </footer>
+    <!-- Javascript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
